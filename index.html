@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <title>Turn Based RPG</title>
+</head>
+   
+
+<body>
+    <img src="images/swordstats.png" class="weapons" alt="sword stats" id="sword">
+    <img src="images/bow_stats.png" class="weapons" alt="bow stats" id="bow">
+    <img src="images/staffstats.png" class="weapons" alt="staff stats" id="staff">
+
+    <div id="battleScene">
+        <div class="imgContainer">
+            <img src="" alt="the players chosen class image" id="player">
+        </div>
+        <div class="imgContainer">
+            <img src="" alt="the beast that the player must fight" id="beast">
+        </div>
+    </div>
+    <table id="healthBars">
+        <tr>
+            <td id="playerHealth" class="hpMana"></td>
+            <td id="bossHealth" class="hpMana"></td>
+        </tr>
+        <tr>
+            <td id="playerMana" class="hpMana"></td>
+        </tr>
+    </table>
+    <div>
+    <input type="button" class="actions" value="Attack" id="attack">
+    <input type="button" class="actions" value="Magic" id="magic">
+    <input type="button" class="actions" value="Potion" id="potion"> 
+    </div>
+    <br>
+    <div id="battleLog">
+        <p></p>
+       <h1 id="result"></h1> 
+    </div>
+    <br>
+    <input type="button" value="Start over" id="reset">
+    <audio id="victoryMusic">
+        <source src="music/final-fantasy-vii-victory-fanfare-1.mp3" type="audio/mp3">
+      </audio>
+    <script src="script.js"></script>
+</body>
+</html>
