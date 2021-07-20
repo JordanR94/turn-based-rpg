@@ -23,6 +23,7 @@ function hideActions(actions){
     document.querySelector("#battleScene").style.display = "none";
 }
 
+//testing comment for pull request
 function showActions(actions, stance){
     var actions = document.getElementsByClassName("actions");
     for(let i = 0; i < actions.length; i++){
