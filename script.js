@@ -13,7 +13,7 @@ var bossHealth = 350;
 var bossAttack = 25;
 var potion = 35;
 var potionUses = 3;
-var battleLog = ["Welcome " + charName + "<br> Chose your weapon!"];
+var battleLog = ["Welcome " + charName + "<br> Choose your weapon!"];
 
 function hideActions(actions){
     var actions = document.getElementsByClassName("actions");
